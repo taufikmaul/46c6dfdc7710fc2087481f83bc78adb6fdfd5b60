@@ -1,0 +1,22 @@
+{
+  "name": "kulinatest",
+  "version": "1.0.0",
+  "description": "kulina test - frontend engineer",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taufikmaul/46c6dfdc7710fc2087481f83bc78adb6fdfd5b60.git"
+  },
+  "author": "Taufik Maulana Nugraha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taufikmaul/46c6dfdc7710fc2087481f83bc78adb6fdfd5b60/issues"
+  },
+  "homepage": "https://github.com/taufikmaul/46c6dfdc7710fc2087481f83bc78adb6fdfd5b60#readme",
+  "dependencies": {
+    "spectre.css": "^0.5.3"
+  }
+}
