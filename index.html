@@ -7,32 +7,38 @@
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"> 
     <script type="text/javascript" src="js/navigation.js"></script>
-    
+    <script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <title>Kulina</title>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <div class="logo-wrapper">
-                    <a class="navbar-item" href="https://bulma.io">
-                        <div id="logo"></div>
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <div class="logo-wrapper">
+                        <a class="navbar-item" href="https://bulma.io">
+                            <div id="logo"></div>
+                        </a>
+                    </div>
+                    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                     </a>
                 </div>
-                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                </a>
-            </div>
-            <div class="navbar-menu" id="navMenu">
-                <ul class="menu-items">
-                    <li class="menu-item"><a href="#" class="menu-link">About Us</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link active">Careers</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">internship</a></li>
-                </ul>
-            </div>
-        </nav>
+                <div class="navbar-menu" id="navMenu">
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="#" class="menu-link">About Us</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link active">Careers</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">internship</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <section class="hero">
         <div class="hero-body">
@@ -49,20 +55,197 @@
     <section class="page-wrapper">
         <div class="container">
             <div class="columns">
-                <div class="column is-two-fifths">
+                <div class="column is-one-third">
                     <h1 class="title">
                         What We Do
                     </h1>
                 </div>
-                <div class="column"></div>
+                <div class="column">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi asperiores similique odio numquam totam ea quod odit harum maiores? Rem omnis harum nesciunt odio praesentium aliquam reiciendis laudantium eius commodi?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi asperiores similique odio numquam totam ea quod odit harum maiores? Rem omnis harum nesciunt odio praesentium aliquam reiciendis laudantium eius commodi?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi asperiores similique odio numquam totam ea quod odit harum maiores? Rem omnis harum nesciunt odio praesentium aliquam reiciendis laudantium eius commodi?</p>
+                </div>
             </div>
             <div class="columns">
-                <div class="column is-two-fifths">
+                <div class="column is-one-third">
                     <h1 class="title">
-                        Explore Opportunities
+                        Explore<br/>Opportunities
                     </h1>
                 </div>
-                <div class="column"></div>
+                <div class="column">
+                        <div class="jobs">
+                            <div class="job job-container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="job-info">
+                                            <h3 class="job-title title is-5">Frontend Developer</h3>
+                                            <div class="job-detail">
+                                                <span class="type">Engineer</span>
+                                                <span class="time">Fulltime</span>
+                                                <span class="city">Bandung</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-one-quarter">
+                                        <button class="apply-job button is-medium is-fullwidth">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job job-container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="job-info">
+                                            <h3 class="job-title title is-5">Backend Developer</h3>
+                                            <div class="job-detail">
+                                                <span class="type">Engineer</span>
+                                                <span class="time">Fulltime</span>
+                                                <span class="city">Jakarta</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-one-quarter">
+                                        <button class="apply-job button is-medium is-fullwidth">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job job-container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="job-info">
+                                            <h3 class="job-title title is-5">Mobile iOs Developer</h3>
+                                            <div class="job-detail">
+                                                <span class="type">Engineer</span>
+                                                <span class="time">Fulltime</span>
+                                                <span class="city">Yogyakarta</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-one-quarter">
+                                        <button class="apply-job button is-medium is-fullwidth">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job job-container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="job-info">
+                                            <h3 class="job-title title is-5">Full Stack Developer</h3>
+                                            <div class="job-detail">
+                                                <span class="type">Engineer</span>
+                                                <span class="time">Fulltime</span>
+                                                <span class="city">Bandung</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-one-quarter">
+                                        <button class="apply-job button is-medium is-fullwidth">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job job-container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="job-info">
+                                            <h3 class="job-title title is-5">Product Owner</h3>
+                                            <div class="job-detail">
+                                                <span class="type">Engineer</span>
+                                                <span class="time">Fulltime</span>
+                                                <span class="city">Bandung</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-one-quarter">
+                                        <button class="apply-job button is-medium is-fullwidth">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job job-container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="job-info">
+                                            <h3 class="job-title title is-5">Data Analyst</h3>
+                                            <div class="job-detail">
+                                                <span class="type">Engineer</span>
+                                                <span class="time">Fulltime</span>
+                                                <span class="city">Jakarta</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-one-quarter">
+                                        <button class="apply-job button is-medium is-fullwidth">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job job-container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="job-info">
+                                            <h3 class="job-title title is-5">Frontend Developer</h3>
+                                            <div class="job-detail">
+                                                <span class="type">Engineer</span>
+                                                <span class="time">Fulltime</span>
+                                                <span class="city">Bandung</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-one-quarter">
+                                        <button class="apply-job button is-medium is-fullwidth">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job job-container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="job-info">
+                                            <h3 class="job-title title is-5">Frontend Developer</h3>
+                                            <div class="job-detail">
+                                                <span class="type">Engineer</span>
+                                                <span class="time">Fulltime</span>
+                                                <span class="city">Bandung</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-one-quarter">
+                                        <button class="apply-job button is-medium is-fullwidth">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job job-container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="job-info">
+                                            <h3 class="job-title title is-5">Frontend Developer</h3>
+                                            <div class="job-detail">
+                                                <span class="type">Engineer</span>
+                                                <span class="time">Fulltime</span>
+                                                <span class="city">Bandung</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-one-quarter">
+                                        <button class="apply-job button is-medium is-fullwidth">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job job-container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="job-info">
+                                            <h3 class="job-title title is-5">Frontend Developer</h3>
+                                            <div class="job-detail">
+                                                <span class="type">Engineer</span>
+                                                <span class="time">Fulltime</span>
+                                                <span class="city">Bandung</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-one-quarter">
+                                        <button class="apply-job button is-medium is-fullwidth">Apply</button>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                </div>
             </div>
         </div>
     </section>
@@ -70,10 +253,11 @@
         <div class="container">
             <div class="columns">
                 <div class="column">
-                    <span class="copyright">Made <i class="fi flaticon-favorite-heart-button icon"></i> from indonesia. Kulina, 2018. All rights reserved</span>
+                    <span class="copyright">
+                        <span>Made <i class="fi flaticon-favorite-heart-button icon"></i> from indonesia.</span> <span>© Kulina, 2018. All rights reserved</span></span>
                 </div>
                 <div class="column">
-                    <div class="social-footer">
+                    <div class="social-footer is-hidden-mobile">
                         <span class="label">follow kami</span>
                         <div class="social-icons">
                             <ul class="socials">

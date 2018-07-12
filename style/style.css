@@ -2250,8 +2250,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 @media screen and (min-width: 1472px) {
   .container {
-    max-width: 1344px;
-    width: 1344px;
+    max-width: 1440px;
+    width: 100%;
   }
 }
 
@@ -5593,6 +5593,10 @@ Creation date: 12/07/2018 20:00
   content: "";
 }
 
+body * {
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -5611,6 +5615,11 @@ header #logo {
   height: 40px;
   display: block;
 }
+@media screen and (max-width: 768px) {
+  header .navbar-brand {
+    align-items: center;
+  }
+}
 header .navbar-burger {
   color: white;
 }
@@ -5619,12 +5628,11 @@ header .navbar-burger:hover {
 }
 header .navbar-menu {
   padding: 10px 0px;
-  height: 100%;
   justify-content: flex-end;
   align-items: center;
 }
 header .navbar-menu.is-active {
-  width: 30%;
+  width: 50vw;
   right: 0px;
   position: absolute;
   top: 70%;
@@ -5707,6 +5715,141 @@ header .navbar-menu ul li .menu-link:hover {
   background: #FD7314;
   color: #ffffff;
   cursor: pointer;
+}
+
+.page-wrapper .container > .columns {
+  margin-top: 70px;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 768px) {
+  .page-wrapper .container > .columns {
+    margin-top: 30px;
+  }
+  .page-wrapper .container > .columns:last-child {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+}
+.page-wrapper .container > .columns:not(:first-child) {
+  margin-top: 80px;
+}
+.page-wrapper .container > .columns:last-child {
+  margin-bottom: 70px;
+}
+.page-wrapper .container > .columns p {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.page-wrapper .container > .columns .jobs > .job.job-container {
+  padding: 20px;
+  box-shadow: 0 0 20px 0px #cacaca;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .page-wrapper .container > .columns .jobs > .job.job-container .column:last-child {
+    padding-top: 0px;
+  }
+}
+.page-wrapper .container > .columns .jobs > .job.job-container:last-child {
+  margin-bottom: 0px;
+}
+.page-wrapper .container > .columns .jobs > .job.job-container button.apply-job {
+  background-color: #FD7314;
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border-color: #FD7314;
+  height: auto;
+  transition: all 0.3s;
+}
+.page-wrapper .container > .columns .jobs > .job.job-container button.apply-job:hover {
+  background-color: #aa4601;
+}
+@media screen and (max-width: 768px) {
+  .page-wrapper .container > .columns .jobs > .job.job-container button.apply-job {
+    width: 40%;
+    padding: 5px;
+  }
+}
+.page-wrapper .container > .columns .jobs > .job.job-container .job-title {
+  margin: 0px;
+}
+.page-wrapper .container > .columns .jobs > .job.job-container .job-detail > span {
+  font-size: 14px;
+  color: #a2a2a2;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.page-wrapper .container > .columns .jobs > .job.job-container .job-detail > span:not(:last-child):after {
+  content: "";
+  margin: 0px 3px 0px 7px;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #a2a2a2;
+  position: relative;
+}
+
+footer.footer {
+  padding: 0px 0px 50px;
+  background: transparent;
+}
+footer.footer .container {
+  border-top: 1px solid #EAEAEA;
+  padding-top: 50px;
+}
+footer.footer .container .copyright {
+  color: #757575;
+}
+@media screen and (max-width: 768px) {
+  footer.footer .container .copyright {
+    text-align: center;
+    display: block;
+  }
+  footer.footer .container .copyright > span {
+    width: 100%;
+    display: block;
+  }
+}
+footer.footer .container .flaticon-favorite-heart-button {
+  color: #F9423A;
+}
+footer.footer .container .social-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer.footer .container .social-footer .label {
+  margin-right: 10px;
+}
+footer.footer .container .social-footer .social-icons ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+footer.footer .container .social-footer .social-icons ul .social-links {
+  color: #737373;
+}
+footer.footer .container .social-footer .social-icons ul .social-links:hover {
+  color: #404040;
+}
+footer.footer .container .social-footer .social-icons ul .social-links i:before {
+  font-size: 24px;
+}
+footer.footer .container .social-footer .social-icons ul .social:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-wrapper, footer.footer {
+    padding: 0px 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
